@@ -6,9 +6,13 @@ This repository contains the official public website pages for:
 - DocNest Terms of Use
 - DocNest Support
 
+Developer:
+
+PureNest
+
 Support:
 
-farhanmaqsood44@gmail.com
+purenesttech@gmail.com
 
 ## Website
 

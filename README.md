@@ -1,16 +1,20 @@
-# DocNest Legal & Support
+# Lingoshare Legal & Support
 
 This repository contains the official public website pages for:
 
-- DocNest Privacy Policy
-- DocNest Terms of Use
-- DocNest Support
+- Lingoshare Privacy Policy
+- Lingoshare Terms of Use
+- Lingoshare Support
+
+The app brand is Lingoshare. File names and public URLs stay the same so existing App Store and in-app links keep working. The site path is still `DocNest-Legals`.
 
 Developer:
 
-PureNest
+Farhan Maqsood (individual developer)
 
-Support:
+Copyright line in the app: © 2026 Farhan Maqsood
+
+Support email (the developer’s contact):
 
 purenesttech@gmail.com
 

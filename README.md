@@ -1,12 +1,12 @@
-# Lingoshare Legal & Support
+# LingoShare Legal & Support
 
 This repository contains the official public website pages for:
 
-- Lingoshare Privacy Policy
-- Lingoshare Terms of Use
-- Lingoshare Support
+- LingoShare Privacy Policy
+- LingoShare Terms of Use
+- LingoShare Support
 
-The app brand is Lingoshare. File names and public URLs stay the same so existing App Store and in-app links keep working. The site path is still `DocNest-Legals`.
+The app brand is LingoShare. HTML filenames (`PrivacyPolicy.html`, `TermsOfUse.html`) stay the same so existing App Store and in-app path endings keep working. The GitHub Pages site path is `LingoShare-Legals`.
 
 Developer:
 
@@ -24,14 +24,14 @@ This is a static HTML, CSS, and JavaScript site. It is intended to be hosted on 
 
 Expected website:
 
-https://farhan-maqsood.github.io/DocNest-Legals/
+https://farhan-maqsood.github.io/LingoShare-Legals/
 
 Expected pages:
 
-- Home: https://farhan-maqsood.github.io/DocNest-Legals/
-- Privacy: https://farhan-maqsood.github.io/DocNest-Legals/PrivacyPolicy.html
-- Terms: https://farhan-maqsood.github.io/DocNest-Legals/TermsOfUse.html
-- Support: https://farhan-maqsood.github.io/DocNest-Legals/support.html
+- Home: https://farhan-maqsood.github.io/LingoShare-Legals/
+- Privacy: https://farhan-maqsood.github.io/LingoShare-Legals/PrivacyPolicy.html
+- Terms: https://farhan-maqsood.github.io/LingoShare-Legals/TermsOfUse.html
+- Support: https://farhan-maqsood.github.io/LingoShare-Legals/support.html
 
 The app already links to `PrivacyPolicy.html` and `TermsOfUse.html`. Keep those filenames so existing App Store and in-app URLs continue to work.
 
@@ -39,7 +39,7 @@ The app already links to `PrivacyPolicy.html` and `TermsOfUse.html`. Keep those 
 
 1. Open the repository:
 
-   DocNest-Legals
+   LingoShare-Legals
 
 2. Push/upload the website files.
 
@@ -65,4 +65,4 @@ The app already links to `PrivacyPolicy.html` and `TermsOfUse.html`. Keep those 
 
 8. Wait for GitHub Pages deployment.
 
-The site uses relative links so it works under the `/DocNest-Legals/` path.
+The site uses relative links so it works under the `/LingoShare-Legals/` GitHub Pages path.

@@ -88,10 +88,10 @@
         <li>App preferences, such as appearance, language choices, free-use counters, and a local cache of subscription status</li>
         <li>Privacy Lock settings, if you turn that feature on</li>
         <li>Downloaded on-device language and ML model files</li>
-        <li>Temporary files for the Share Extension, in the app group <code>group.fm.share.DocNest</code>, and temporary files for Phone nearby</li>
+        <li>Temporary files for the Share Extension, in a shared app container for the Share Extension, and temporary files for Phone nearby</li>
       </ul>
       <p>If you turn on Privacy Lock, the PIN is written to the device Keychain with accessibility “when unlocked, this device only,” after the app checks that the write can be read back. An item stored that way is not restored onto a different device by an iOS backup. If the Keychain write fails, the app can keep that PIN in on-device preferences so an existing lock is not lost. The PIN is not sent to the developer. Face ID or Touch ID, if you enable it, is handled by the device. The developer does not receive biometric samples.</p>
-      <p>You can import a file from the Files app, including a file stored in iCloud Drive. The system document picker brings a copy onto the device. The current Settings screen does not offer a working control that syncs the LingoShare library to iCloud. The app’s entitlements still include the iCloud Documents container <code>iCloud.com.fm.DocNest</code>. This policy does not claim that container is unused.</p>
+      <p>You can import a file from the Files app, including a file stored in iCloud Drive. The system document picker brings a copy onto the device. The current Settings screen does not offer a working control that syncs the LingoShare library to iCloud. The app’s entitlements still include an iCloud Documents container. This policy does not claim that container is unused.</p>
 
       <h2>6. Permissions</h2>
       <p>LingoShare asks for access when a feature needs it:</p>
@@ -99,7 +99,7 @@
         <li><strong>Camera</strong> — capture pages for reading and translation, scan a QR code for Phone nearby, and use ID or passport tools</li>
         <li><strong>Photo library</strong> — choose photos to read, and save an image when you pick Save Image in the share sheet</li>
         <li><strong>Files</strong> — import or export documents you choose, including files in iCloud Drive</li>
-        <li><strong>Local network and Bonjour</strong> (<code>_docnestxfer._tcp</code>) — Phone nearby on the same Wi-Fi</li>
+        <li><strong>Local network and Bonjour</strong> (a local Bonjour service) — Phone nearby on the same Wi-Fi</li>
         <li><strong>Face ID or Touch ID</strong> — unlock Privacy Lock</li>
         <li><strong>Calendar</strong> — only if you choose to add a date from Key Facts. On iOS 17 and later the app asks for write-only Calendar access for that save</li>
         <li><strong>Reminders</strong> — only if you choose to save a Key Facts date as a reminder. That request is for Reminders access, described in the system prompt as full access on current iOS versions</li>
@@ -137,7 +137,7 @@
       </ul>
 
       <h2>10. Phone nearby</h2>
-      <p>Phone nearby lets you send or receive documents with a phone or computer on the same Wi-Fi. The current build discovers the session with Bonjour service <code>_docnestxfer._tcp</code> and transfers bytes with cleartext HTTP on the local network. The listener tries TCP ports 8080 through 8090. This is not TLS. App Transport Security in the app allows local networking.</p>
+      <p>Phone nearby lets you send or receive documents with a phone or computer on the same Wi-Fi. The current build discovers the session with a local Bonjour service and transfers bytes with cleartext HTTP on the local network. The listener tries TCP ports 8080 through 8090. This is not TLS. App Transport Security in the app allows local networking.</p>
       <p>You start the session. The host shows a 6-digit PIN. The QR code and copied link are an <code>http://</code> address with the host and port. The PIN is not placed in that URL. After the PIN is accepted, later requests use a session token. Stopping the session, leaving the screen, or letting the session expire ends that sharing session.</p>
       <p>Because the transfer is unencrypted, a person or device on the same Wi-Fi who can observe the traffic can read it. Use a network you trust when the pages are sensitive. The developer does not receive the files from Phone nearby and does not relay them through a LingoShare server.</p>
 
@@ -147,7 +147,7 @@
       <p>If you tap a phone number, the app opens a <code>tel:</code> link. If you tap an address, the app opens Apple Maps with that address as the query (<code>https://maps.apple.com/</code>). If you tap a link found in the document, the app opens that URL. Each of those happens only after you tap.</p>
 
       <h2>12. Purchases</h2>
-      <p>LingoShare Plus is sold through Apple’s StoreKit and the App Store. The product identifiers in the app are <code>com.fm.DocNest.Weekly</code>, <code>com.fm.DocNest.Monthly</code>, and <code>com.fm.DocNest.Yearly</code>. Apple shows the price and renewal terms before you buy. Apple processes payment under Apple’s privacy policy and App Store terms.</p>
+      <p>LingoShare Plus is sold through Apple’s StoreKit and the App Store as weekly, monthly and yearly LingoShare Plus plans. Apple shows the price and renewal terms before you buy. Apple processes payment under Apple’s privacy policy and App Store terms.</p>
       <p>The developer does not receive your payment card number or Apple ID password. The app keeps a local cache of entitlement state so Plus features can be recognized on the device, including when StoreKit is briefly unavailable.</p>
 
       <h2>13. How long information stays, and backups</h2>
